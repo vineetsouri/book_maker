@@ -1,0 +1,32 @@
+2.nth prime number
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int n,j;
+  int tof = 0;
+  int nf = 0;
+  cin >> n;
+  int m = (n/2)+1;
+  for(int i = 2; i > 0; i++)
+  {  
+    if(n == nf)
+    {
+      break;
+    }
+    for(j = 2; j < m; j++)
+    {
+      if(i%j == 0)
+      {
+       tof = 1;
+       break;
+      }    
+    }
+    if(tof == 0)
+    {
+      nf = nf+1;
+    }
+  }
+}
