@@ -5,7 +5,7 @@
     <% @book.each do |book| %>
       <div class="col-md-4 book">
        <h3>
-          book.title
+          <%= link_to book.title, book_path(book) %>
        </h3>
       </div>
     <% end %>
